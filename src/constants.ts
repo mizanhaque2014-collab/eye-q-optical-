@@ -14,7 +14,7 @@ export const BRANCHES: Branch[] = [
     whatsapp: '9804533853',
     location: { lat: 22.5697, lng: 88.3585 },
     timing: '10:00 AM - 7:00 PM (Sunday Closed)',
-    image: '/src/assets/images/eyeq_corporate_hq_office_1779179444700.png'
+    image: '/assets/images/eyeq_corporate_hq_office_1779179444700.png'
   },
   {
     id: 'kobordanga',
@@ -24,7 +24,7 @@ export const BRANCHES: Branch[] = [
     whatsapp: '9804533853',
     location: { lat: 22.4578, lng: 88.3129 },
     timing: '11:00 AM - 9:00 PM',
-    image: '/src/assets/images/kobordanga_branch_interior_1779178998161.png'
+    image: '/assets/images/kobordanga_branch_interior_1779178998161.png'
   },
   {
     id: 'picnic-garden',
@@ -34,7 +34,7 @@ export const BRANCHES: Branch[] = [
     whatsapp: '9804533853',
     location: { lat: 22.5292, lng: 88.3934 },
     timing: '11:00 AM - 9:00 PM',
-    image: '/src/assets/images/luxury_optical_showroom_hero_1779176289085.png'
+    image: '/assets/images/luxury_optical_showroom_hero_1779176289085.png'
   },
   {
     id: 'uttarpara',
@@ -44,7 +44,7 @@ export const BRANCHES: Branch[] = [
     whatsapp: '9804533853',
     location: { lat: 22.6644, lng: 88.3475 },
     timing: '10:30 AM - 8:30 PM',
-    image: '/src/assets/images/premium_optical_boutique_view_1779179027784.png'
+    image: '/assets/images/premium_optical_boutique_view_1779179027784.png'
   },
   {
     id: 'baruipur',
@@ -54,7 +54,7 @@ export const BRANCHES: Branch[] = [
     whatsapp: '9804533853',
     location: { lat: 22.3582, lng: 88.4293 },
     timing: '10:30 AM - 8:30 PM',
-    image: '/src/assets/images/modern_optical_display_wall_1779177828358.png'
+    image: '/assets/images/modern_optical_display_wall_1779177828358.png'
   },
   {
     id: 'purulia',
@@ -64,7 +64,7 @@ export const BRANCHES: Branch[] = [
     whatsapp: '9804533853',
     location: { lat: 23.3321, lng: 86.3652 },
     timing: '10:00 AM - 8:00 PM',
-    image: '/src/assets/images/luxury_optical_showroom_hero_1779176289085.png'
+    image: '/assets/images/luxury_optical_showroom_hero_1779176289085.png'
   }
 ];
 
@@ -194,20 +194,20 @@ export const TESTIMONIALS = [
     name: 'Ananya Sharma',
     role: 'Creative Director',
     content: 'The precision of their eye testing is unmatched. I found the perfect pair of titanium frames that actually complement my style. Highly recommended!',
-    avatar: '/src/assets/images/bengali_woman_glasses_1779362005700.png'
+    avatar: '/assets/images/bengali_woman_glasses_1779362005700.png'
   },
   {
     id: '2',
     name: 'Rajiv Mukherjee',
     role: 'Tech Consultant',
     content: "Excellent service at the Bowbazar branch. The staff is professional and the equipment is state-of-the-art. My blue-light glasses have been a lifesaver.",
-    avatar: '/src/assets/images/bengali_man_glasses_1779362023194.png'
+    avatar: '/assets/images/bengali_man_glasses_1779362023194.png'
   },
   {
     id: '3',
     name: 'Priyanka Das',
     role: 'University Professor',
     content: 'Eye-Q Optical offers a truly premium experience. From the minimalist showroom to the careful fitting process, everything screams luxury.',
-    avatar: '/src/assets/images/bengali_professor_glasses_1779362039790.png'
+    avatar: '/assets/images/bengali_professor_glasses_1779362039790.png'
   }
 ];

@@ -30,7 +30,7 @@ function Hero() {
       <div className="absolute inset-0 z-0">
         <motion.img 
           style={{ y }}
-          src="/src/assets/images/luxury_optical_showroom_hero_1779176289085.png" 
+          src="/assets/images/luxury_optical_showroom_hero_1779176289085.png" 
           alt="Luxury Optical Showroom" 
           className="w-full h-[120%] object-cover opacity-50 -top-[10%] relative"
           referrerPolicy="no-referrer"
@@ -215,7 +215,7 @@ function ProductHighlight() {
           >
             <div className="absolute inset-0 bg-brand-blue/20 blur-[100px] rounded-full" />
             <img 
-              src="/src/assets/images/premium_designer_frames_1779176306036.png" 
+              src="/assets/images/premium_designer_frames_1779176306036.png" 
               alt="Premium Product" 
               className="relative z-10 w-full rounded-3xl border border-slate-200 shadow-2xl"
               referrerPolicy="no-referrer"
@@ -330,7 +330,7 @@ function StoreGallery() {
             className="col-span-2 aspect-[16/9] overflow-hidden rounded-3xl border border-slate-100"
           >
             <img 
-              src="/src/assets/images/modern_optical_display_wall_1779177828358.png" 
+              src="/assets/images/modern_optical_display_wall_1779177828358.png" 
               alt="Gallery Wall" 
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-1000"
               referrerPolicy="no-referrer"
@@ -344,7 +344,7 @@ function StoreGallery() {
             className="aspect-square overflow-hidden rounded-3xl border border-slate-100"
           >
             <img 
-              src="/src/assets/images/luxury_optical_showroom_hero_1779176289085.png" 
+              src="/assets/images/luxury_optical_showroom_hero_1779176289085.png" 
               alt="Showroom" 
               className="w-full h-full object-cover hover:scale-110 transition-all duration-700"
               referrerPolicy="no-referrer"
@@ -386,7 +386,7 @@ function EquipmentSection() {
           >
              <div className="absolute inset-0 bg-brand-blue/10 blur-[80px] rounded-full" />
              <img 
-              src="/src/assets/images/advanced_eye_testing_lab_1779176321332.png" 
+              src="/assets/images/advanced_eye_testing_lab_1779176321332.png" 
               alt="Advanced Equipment" 
               className="relative z-10 w-full rounded-[40px] border border-brand-blue/20 shadow-2xl blue-glow"
               referrerPolicy="no-referrer"

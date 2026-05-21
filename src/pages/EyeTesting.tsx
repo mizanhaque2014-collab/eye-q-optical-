@@ -10,7 +10,7 @@ export default function EyeTesting() {
       <Section className="bg-luxury-black relative h-[70vh] flex items-center">
          <div className="absolute inset-0 opacity-20">
             <img 
-               src="/src/assets/images/advanced_eye_testing_lab_1779176321332.png" 
+               src="/assets/images/advanced_eye_testing_lab_1779176321332.png" 
                alt="Lab" 
                className="w-full h-full object-cover"
                referrerPolicy="no-referrer"
