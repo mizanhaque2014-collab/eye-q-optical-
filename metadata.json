@@ -1,0 +1,6 @@
+{
+  "name": "Eye-Q Optical",
+  "description": "Premium Vision Care & Luxury Eyewear Experience in Kolkata. Advanced eye testing, branded frames, and contact lenses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
