@@ -1,0 +1,7 @@
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+
+# Point to your correct sitemap URL configured for your custom .io domain
+Sitemap: https://www.eyeqoptical.io/sitemap.xml
