@@ -22,13 +22,40 @@ export default function Footer() {
             Leading vision care specialists in Kolkata. We provide premium quality frames, advanced eye testing, and professional eyewear solutions since inception.
           </p>
           <div className="flex gap-4">
-            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-brand-blue hover:text-white transition-colors">
+            <a 
+              href="https://www.facebook.com/share/1AgN7Qq4SS/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              title="Eye-Q Optical Primary Facebook"
+              className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-brand-blue hover:text-white transition-all duration-300"
+            >
               <Facebook size={18} />
             </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-brand-blue hover:text-white transition-colors">
+            <a 
+              href="https://www.facebook.com/share/1FWjYT1wdz/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              title="Eye-Q Optical Secondary Facebook"
+              className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-brand-blue hover:text-white transition-all duration-300"
+            >
+              <Facebook size={18} className="opacity-85" />
+            </a>
+            <a 
+              href="https://www.instagram.com/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              title="Instagram"
+              className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-brand-blue hover:text-white transition-all duration-300"
+            >
               <Instagram size={18} />
             </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-brand-blue hover:text-white transition-colors">
+            <a 
+              href="https://twitter.com/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              title="Twitter"
+              className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-brand-blue hover:text-white transition-all duration-300"
+            >
               <Twitter size={18} />
             </a>
           </div>

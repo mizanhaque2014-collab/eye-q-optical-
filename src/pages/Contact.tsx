@@ -3,7 +3,8 @@ import { motion, AnimatePresence } from 'motion/react';
 import Section, { SectionTitle } from '../components/UI/Section';
 import { 
   Phone, MessageSquare, Mail, MapPin, 
-  Send, Briefcase, Upload, CheckCircle, Trash2, FileText
+  Send, Briefcase, Upload, CheckCircle, Trash2, FileText,
+  Facebook, Instagram
 } from 'lucide-react';
 import { MAIN_PHONE, MAIN_ADDRESS } from '../constants';
 import { getWhatsAppLink } from '../lib/utils';
@@ -197,6 +198,38 @@ export default function Contact() {
                        <p className="text-white font-bold mb-1">Email Inquiry</p>
                        <p>info@eyeqoptical.io</p>
                     </div>
+                 </div>
+                 <div className="pt-6 border-t border-white/5 flex flex-col gap-3">
+                   <p className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#64748b]">Connect with Us</p>
+                   <div className="flex gap-3 animate-fade-in">
+                     <a 
+                       href="https://www.facebook.com/share/1AgN7Qq4SS/" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       title="Eye-Q Optical Primary Facebook"
+                       className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-brand-blue hover:text-white transition-all duration-300"
+                     >
+                       <Facebook size={16} />
+                     </a>
+                     <a 
+                       href="https://www.facebook.com/share/1FWjYT1wdz/" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       title="Eye-Q Optical Secondary Facebook"
+                       className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-brand-blue hover:text-white transition-all duration-300"
+                     >
+                       <Facebook size={16} className="opacity-85" />
+                     </a>
+                     <a 
+                       href="https://www.instagram.com/" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       title="Instagram"
+                       className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-brand-blue hover:text-white transition-all duration-300"
+                     >
+                       <Instagram size={16} />
+                     </a>
+                   </div>
                  </div>
             </div>
           </div>
