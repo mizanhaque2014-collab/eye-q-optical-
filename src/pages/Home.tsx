@@ -18,6 +18,7 @@ import {
 import { Link } from 'react-router-dom';
 import Section, { SectionTitle } from '../components/UI/Section';
 import { MAIN_WHATSAPP, SERVICES, BRANCHES, PRODUCTS, TESTIMONIALS } from '../constants';
+import { getWhatsAppLink } from '../lib/utils';
 
 // Hero Section
 function Hero() {
@@ -510,8 +511,9 @@ function WhatsAppCTA() {
              <p className="text-blue-100 mb-8 opacity-90 leading-relaxed">Have a question about your vision or need to check frame availability? Speak to our specialists directly on WhatsApp for an instant consultation.</p>
              <div className="flex flex-wrap gap-4">
                 <a 
-                  href={`https://wa.me/${MAIN_WHATSAPP}`}
+                  href={getWhatsAppLink(MAIN_WHATSAPP)}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="px-8 py-4 bg-white text-brand-blue font-bold rounded-full flex items-center gap-2 hover:scale-105 transition-all shadow-xl"
                 >
                   <MessageSquare size={20} fill="currentColor" /> CHAT NOW

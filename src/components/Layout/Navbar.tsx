@@ -3,7 +3,7 @@ import { Menu, X, Eye, Phone, MessageSquare } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { NAV_LINKS, STORE_NAME, MAIN_WHATSAPP } from '../../constants';
-import { cn } from '../../lib/utils';
+import { cn, getWhatsAppLink } from '../../lib/utils';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +51,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href={`https://wa.me/${MAIN_WHATSAPP}`}
+            href={getWhatsAppLink(MAIN_WHATSAPP)}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-5 py-2 bg-brand-blue text-white text-[11px] font-black rounded-full hover:scale-105 transition-all"
@@ -103,7 +103,9 @@ export default function Navbar() {
                   <Phone size={18} /> Call Us
                 </a>
                 <a
-                  href={`https://wa.me/${MAIN_WHATSAPP}`}
+                  href={getWhatsAppLink(MAIN_WHATSAPP)}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex-1 flex items-center justify-center gap-2 py-3 bg-brand-blue rounded-lg text-white font-bold"
                 >
                   <MessageSquare size={18} /> WhatsApp

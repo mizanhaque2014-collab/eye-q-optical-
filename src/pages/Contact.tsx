@@ -6,6 +6,7 @@ import {
   Send, Briefcase, Upload, CheckCircle, Trash2, FileText
 } from 'lucide-react';
 import { MAIN_PHONE, MAIN_ADDRESS } from '../constants';
+import { getWhatsAppLink } from '../lib/utils';
 
 export default function Contact() {
   const [formType, setFormType] = useState<'message' | 'career'>('message');
@@ -94,8 +95,7 @@ export default function Contact() {
 📧 *Backup Contact*: info@eyeqoptical.io
 🕒 *Generated At*: ${new Date().toLocaleDateString()}`;
 
-    const encodedValue = encodeURIComponent(formattedMsg);
-    window.open(`https://wa.me/917980757092?text=${encodedValue}`, '_blank');
+    window.open(getWhatsAppLink('917980757092', formattedMsg), '_blank');
 
     setSubmitting(false);
     setIsSubmitted(true);
@@ -135,8 +135,7 @@ export default function Contact() {
 📧 *Backup Contact*: info@eyeqoptical.io
 🕒 *Generated At*: ${new Date().toLocaleDateString()}`;
 
-    const encodedValue = encodeURIComponent(formattedMsg);
-    window.open(`https://wa.me/917980757092?text=${encodedValue}`, '_blank');
+    window.open(getWhatsAppLink('917980757092', formattedMsg), '_blank');
 
     setSubmitting(false);
     setIsSubmitted(true);
@@ -180,7 +179,7 @@ export default function Contact() {
                   <MessageSquare className="text-brand-blue mb-6" size={32} />
                   <h4 className="text-white font-bold mb-2">WhatsApp Chat</h4>
                   <p className="text-gray-500 text-sm mb-4">Instant expert inquiry</p>
-                  <a href="https://wa.me/917980757092" target="_blank" rel="noreferrer" className="text-white font-bold hover:text-brand-blue transition-colors">Start Chat</a>
+                  <a href={getWhatsAppLink('917980757092')} target="_blank" rel="noreferrer" className="text-white font-bold hover:text-brand-blue transition-colors">Start Chat</a>
                </div>
             </div>
 

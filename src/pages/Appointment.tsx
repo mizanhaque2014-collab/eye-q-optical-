@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import Section, { SectionTitle } from '../components/UI/Section';
 import { BRANCHES } from '../constants';
 import { Send, Calendar, User, Phone, MapPin, Clock, CheckCircle } from 'lucide-react';
+import { getWhatsAppLink } from '../lib/utils';
 
 export default function Appointment() {
   const [name, setName] = useState('');
@@ -42,9 +43,8 @@ export default function Appointment() {
 📧 *Backup Contact*: info@eyeqoptical.io
 🕒 *Generated At*: ${new Date().toLocaleDateString()}`;
 
-    const encodedValue = encodeURIComponent(formattedMsg);
     // WhatsApp redirect to +917980757092
-    window.open(`https://wa.me/917980757092?text=${encodedValue}`, '_blank');
+    window.open(getWhatsAppLink('917980757092', formattedMsg), '_blank');
     
     setIsSubmitted(true);
   };
@@ -236,7 +236,7 @@ export default function Appointment() {
 
 ---
 📧 *Backup Contact*: info@eyeqoptical.io`;
-                       window.open(`https://wa.me/917980757092?text=${encodeURIComponent(formatted)}`, '_blank');
+                       window.open(getWhatsAppLink('917980757092', formatted), '_blank');
                      }}
                      className="flex-1 py-4 bg-brand-blue text-white font-bold rounded-xl transition-all text-sm shadow-md cursor-pointer hover:bg-brand-blue/85"
                    >

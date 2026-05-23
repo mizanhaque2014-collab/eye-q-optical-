@@ -2,6 +2,7 @@ import { MapPin, Phone, MessageSquare, Clock, ArrowUpRight } from 'lucide-react'
 import { motion } from 'motion/react';
 import Section, { SectionTitle } from '../components/UI/Section';
 import { BRANCHES } from '../constants';
+import { getWhatsAppLink } from '../lib/utils';
 
 export default function Branches() {
   return (
@@ -56,7 +57,9 @@ export default function Branches() {
                      <Phone size={14} /> CALL
                    </a>
                    <a 
-                     href={`https://wa.me/91${branch.whatsapp}`}
+                     href={getWhatsAppLink(`91${branch.whatsapp}`)}
+                     target="_blank"
+                     rel="noopener noreferrer"
                      className="flex-1 min-w-[120px] py-3 bg-brand-blue/10 text-brand-blue text-xs font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-brand-blue hover:text-white transition-all shadow-lg"
                    >
                      <MessageSquare size={14} /> WHATSAPP

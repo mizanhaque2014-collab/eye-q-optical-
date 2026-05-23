@@ -1,12 +1,13 @@
 import { MessageSquare } from 'lucide-react';
 import { motion } from 'motion/react';
 import { MAIN_WHATSAPP } from '../../constants';
+import { getWhatsAppLink } from '../../lib/utils';
 
 export default function WhatsAppBtn() {
   return (
     <motion.a
       id="whatsapp-floating-btn"
-      href={`https://wa.me/${MAIN_WHATSAPP}`}
+      href={getWhatsAppLink(MAIN_WHATSAPP)}
       target="_blank"
       rel="noopener noreferrer"
       initial={{ scale: 0, opacity: 0 }}

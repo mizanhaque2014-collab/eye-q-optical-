@@ -5,6 +5,7 @@ import { PRODUCTS, MAIN_WHATSAPP } from '../constants';
 import { ShoppingBag, ChevronRight, Eye, Heart, X, MessageSquare, CheckCircle2, Facebook, Twitter, Share2 } from 'lucide-react';
 import { useState } from 'react';
 import { Product } from '../types';
+import { getWhatsAppLink } from '../lib/utils';
 
 const CATEGORIES = ['All', 'Frames', 'Sunglasses', 'Contact Lenses', 'Computer Glasses', 'Kids'];
 
@@ -32,7 +33,7 @@ export default function Products() {
   const shareLinks = {
     facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
     twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}`,
-    whatsapp: `https://wa.me/?text=${encodeURIComponent(shareText + ' ' + shareUrl)}`
+    whatsapp: getWhatsAppLink('', shareText + ' ' + shareUrl)
   };
 
   return (
@@ -226,8 +227,9 @@ export default function Products() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
-                  href={`https://wa.me/${MAIN_WHATSAPP}?text=Hi, I am interested in ${selectedProduct.name} from your ${selectedProduct.category} collection.`}
+                  href={getWhatsAppLink(MAIN_WHATSAPP, `Hi, I am interested in ${selectedProduct.name} from your ${selectedProduct.category} collection.`)}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="flex-1 px-8 py-4 bg-brand-blue text-white text-xs font-bold rounded-xl flex items-center justify-center gap-2 hover:brightness-110 transition-all uppercase tracking-widest shadow-lg"
                 >
                   <MessageSquare size={16} fill="currentColor" />
