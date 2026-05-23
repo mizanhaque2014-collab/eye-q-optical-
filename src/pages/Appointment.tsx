@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
+import { Helmet } from 'react-helmet-async';
 import Section, { SectionTitle } from '../components/UI/Section';
 import { BRANCHES } from '../constants';
 import { Send, Calendar, User, Phone, MapPin, Clock, CheckCircle } from 'lucide-react';
@@ -62,6 +63,10 @@ export default function Appointment() {
 
   return (
     <div id="appointment-page" className="pt-20 min-h-screen bg-black">
+      <Helmet>
+        <title>Book Computerized Eye Test Online in Kolkata | Eye-Q Optical</title>
+        <meta name="description" content="Schedule your professional eye exam online at any of our 6 Kolkata branches. Fast, accurate diagnostics with advanced clinical equipment in West Bengal." />
+      </Helmet>
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>
@@ -80,7 +85,7 @@ export default function Appointment() {
                      <Clock size={24} />
                   </div>
                   <div>
-                    <h4 className="text-white font-bold">Fast Turnaround</h4>
+                    <h3 className="text-white font-bold">Fast Turnaround</h3>
                     <p className="text-xs text-gray-500">Pick your glasses on the same day for standard prescriptions.</p>
                   </div>
                </div>
@@ -89,7 +94,7 @@ export default function Appointment() {
                      <Calendar size={24} />
                   </div>
                   <div>
-                    <h4 className="text-white font-bold">Flexible Booking</h4>
+                    <h3 className="text-white font-bold">Flexible Booking</h3>
                     <p className="text-xs text-gray-500">Available 7 days a week across all Kolkata locations.</p>
                   </div>
                </div>

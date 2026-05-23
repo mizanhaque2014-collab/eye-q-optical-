@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform } from 'motion/react';
+import { Helmet } from 'react-helmet-async';
 import { 
   ArrowRight, 
   ChevronRight, 
@@ -539,8 +540,33 @@ function WhatsAppCTA() {
 }
 
 export default function Home() {
+  const schemaMarkup = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Eye-Q Optical",
+    "telephone": "+917980757092",
+    "priceRange": "$$",
+    "image": "https://www.eyeqoptical.io/assets/images/luxury_optical_showroom_hero_1779176289085.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "64 Metcalf Street, Sabir Residency, Room No. 104, Bowbazar",
+      "addressLocality": "Kolkata",
+      "addressRegion": "West Bengal",
+      "postalCode": "700013",
+      "addressCountry": "IN"
+    },
+    "url": "https://www.eyeqoptical.io"
+  };
+
   return (
     <div id="home-page">
+      <Helmet>
+        <title>Premium Vision Care & Luxury Eyewear Kolkata | Eye-Q Optical</title>
+        <meta name="description" content="Experience advanced computerized eye testing & exclusive international designer frames at Kolkata's premier boutique optical showroom in West Bengal." />
+        <script type="application/ld+json">
+          {JSON.stringify(schemaMarkup)}
+        </script>
+      </Helmet>
       <Hero />
       <Services />
       <ProductHighlight />

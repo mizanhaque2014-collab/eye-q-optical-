@@ -74,8 +74,8 @@ export default function Products() {
                 <div className="aspect-square bg-white/5 rounded-3xl overflow-hidden border border-white/10 group-hover:border-brand-blue/30 transition-all mb-6 relative cursor-pointer shadow-lg hover:shadow-2xl" onClick={() => openQuickView(product)}>
                    <img 
                      src={product.image} 
-                     alt={product.name} 
-                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    alt={`${product.name} - Luxury Eyewear Boutique Eye-Q Optical Kolkata`}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                    />
                    <div className="absolute top-4 right-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
                       <button className="w-10 h-10 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-brand-blue transition-colors shadow-lg">
@@ -130,7 +130,7 @@ export default function Products() {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.3 }}
                   src={activeImage || selectedProduct.image} 
-                  alt={selectedProduct.name} 
+                  alt={`${selectedProduct.name} - Luxury Eyewear Boutique Eye-Q Optical Kolkata`}
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -155,7 +155,7 @@ export default function Products() {
                       >
                         <img 
                           src={imgUrl} 
-                          alt={`${selectedProduct.name} angle ${gIdx + 1}`} 
+                          alt={`${selectedProduct.name} View ${gIdx + 1} - Luxury Eyewear Boutique Eye-Q Optical Kolkata`} 
                           className="w-full h-full object-cover animate-fade-in"
                           referrerPolicy="no-referrer"
                         />

@@ -1,5 +1,6 @@
 import { MapPin, Phone, MessageSquare, Clock, ArrowUpRight } from 'lucide-react';
 import { motion } from 'motion/react';
+import { Helmet } from 'react-helmet-async';
 import Section, { SectionTitle } from '../components/UI/Section';
 import { BRANCHES } from '../constants';
 import { getWhatsAppLink } from '../lib/utils';
@@ -7,6 +8,10 @@ import { getWhatsAppLink } from '../lib/utils';
 export default function Branches() {
   return (
     <div id="branches-page" className="pt-20 bg-premium-blue">
+      <Helmet>
+        <title>Optical Store Locations in Kolkata & Uttarpara | Eye-Q Optical</title>
+        <meta name="description" content="Find an Eye-Q Optical showroom near you. View addresses and timings for our Bowbazar, Kobordanga, and Picnic Garden branches in Kolkata, W.B." />
+      </Helmet>
       <Section>
         <SectionTitle 
           title="Presence Across West Bengal" 
