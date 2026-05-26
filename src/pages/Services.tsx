@@ -64,7 +64,7 @@ export default function Services() {
            <div className="relative">
               <div className="absolute inset-0 bg-brand-blue/20 blur-[80px]" />
               <img 
-                src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?q=80&w=800" 
+                src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?q=80&w=800" width={800} height={600} loading="lazy" 
                 alt="Contact Lenses" 
                 className="relative z-10 w-full rounded-3xl"
               />

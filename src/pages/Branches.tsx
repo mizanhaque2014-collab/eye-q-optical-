@@ -32,6 +32,9 @@ export default function Branches() {
                 <img 
                   src={branch.image} 
                   alt={branch.name} 
+                  width={400}
+                  height={400}
+                  loading="lazy"
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
                 />
                 <div className="absolute top-4 left-4 bg-brand-blue text-white px-4 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-lg">

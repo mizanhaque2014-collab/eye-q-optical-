@@ -34,6 +34,8 @@ function Hero() {
           style={{ y }}
           src="/assets/images/luxury_optical_showroom_hero_1779176289085.png" 
           alt="Luxury Optical Showroom" 
+          width={1920}
+          height={1080}
           className="w-full h-[120%] object-cover opacity-50 -top-[10%] relative"
           referrerPolicy="no-referrer"
         />
@@ -219,6 +221,9 @@ function ProductHighlight() {
             <img 
               src="/assets/images/premium_designer_frames_1779176306036.png" 
               alt="Premium Product" 
+              width={600}
+              height={450}
+              loading="lazy"
               className="relative z-10 w-full rounded-3xl border border-slate-200 shadow-2xl"
               referrerPolicy="no-referrer"
             />
@@ -284,6 +289,9 @@ function Testimonials() {
               <img 
                 src={t.avatar} 
                 alt={t.name} 
+                width={48}
+                height={48}
+                loading="lazy"
                 className="w-12 h-12 rounded-full object-cover border border-brand-blue/30"
                 referrerPolicy="no-referrer"
               />
@@ -334,6 +342,9 @@ function StoreGallery() {
             <img 
               src="/assets/images/modern_optical_display_wall_1779177828358.png" 
               alt="Gallery Wall" 
+              width={800}
+              height={450}
+              loading="lazy"
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-1000"
               referrerPolicy="no-referrer"
             />
@@ -348,6 +359,9 @@ function StoreGallery() {
             <img 
               src="/assets/images/luxury_optical_showroom_hero_1779176289085.png" 
               alt="Showroom" 
+              width={500}
+              height={500}
+              loading="lazy"
               className="w-full h-full object-cover hover:scale-110 transition-all duration-700"
               referrerPolicy="no-referrer"
             />
@@ -362,6 +376,9 @@ function StoreGallery() {
             <img 
               src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=800" 
               alt="Testing" 
+              width={500}
+              height={500}
+              loading="lazy"
               className="w-full h-full object-cover hover:scale-110 transition-all duration-700"
               referrerPolicy="no-referrer"
             />
@@ -390,6 +407,9 @@ function EquipmentSection() {
              <img 
               src="/assets/images/advanced_eye_testing_lab_1779176321332.png" 
               alt="Advanced Equipment" 
+              width={800}
+              height={600}
+              loading="lazy"
               className="relative z-10 w-full rounded-[40px] border border-brand-blue/20 shadow-2xl blue-glow"
               referrerPolicy="no-referrer"
             />
@@ -471,6 +491,9 @@ function BranchesPreview() {
             <img 
               src={branch.image} 
               alt={branch.name} 
+              width={400}
+              height={500}
+              loading="lazy"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               referrerPolicy="no-referrer"
             />

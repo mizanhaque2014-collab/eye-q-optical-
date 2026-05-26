@@ -12,6 +12,8 @@ export default function EyeTesting() {
             <img 
                src="/assets/images/advanced_eye_testing_lab_1779176321332.png" 
                alt="Lab" 
+               width={1920}
+               height={1080}
                className="w-full h-full object-cover"
                referrerPolicy="no-referrer"
             />

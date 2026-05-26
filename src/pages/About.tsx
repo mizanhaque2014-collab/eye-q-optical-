@@ -45,18 +45,18 @@ export default function About() {
             className="grid grid-cols-2 gap-4"
           >
             <img 
-              src="https://images.unsplash.com/photo-1508296695146-257a814070b4?q=80&w=800" 
+              src="https://images.unsplash.com/photo-1508296695146-257a814070b4?q=80&w=800" width={600} height={800} 
               alt="Boutique Eyewear Display" 
               className="w-full aspect-[3/4] object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-700"
             />
             <div className="flex flex-col gap-4">
               <img 
-                src="https://images.unsplash.com/photo-1511732351157-1865efeb9b7b?q=80&w=800" 
+                src="https://images.unsplash.com/photo-1511732351157-1865efeb9b7b?q=80&w=800" width={400} height={400} 
                 alt="Curated Designer Eyewear Display" 
                 className="w-full aspect-square object-cover rounded-2xl"
               />
               <img 
-                src="https://images.unsplash.com/photo-1577803645773-f96470509666?q=80&w=800" 
+                src="https://images.unsplash.com/photo-1577803645773-f96470509666?q=80&w=800" width={400} height={400} 
                 alt="Luxury Sunglasses Rack" 
                 className="w-full aspect-square object-cover rounded-2xl"
               />

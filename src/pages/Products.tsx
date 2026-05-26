@@ -73,7 +73,7 @@ export default function Products() {
              >
                 <div className="aspect-square bg-white/5 rounded-3xl overflow-hidden border border-white/10 group-hover:border-brand-blue/30 transition-all mb-6 relative cursor-pointer shadow-lg hover:shadow-2xl" onClick={() => openQuickView(product)}>
                    <img 
-                     src={product.image} 
+                     src={product.image} width={400} height={400} loading="lazy" 
                     alt={`${product.name} - Luxury Eyewear Boutique Eye-Q Optical Kolkata`}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                    />
@@ -131,6 +131,8 @@ export default function Products() {
                   transition={{ duration: 0.3 }}
                   src={activeImage || selectedProduct.image} 
                   alt={`${selectedProduct.name} - Luxury Eyewear Boutique Eye-Q Optical Kolkata`}
+                  width={600}
+                  height={600}
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -156,6 +158,8 @@ export default function Products() {
                         <img 
                           src={imgUrl} 
                           alt={`${selectedProduct.name} View ${gIdx + 1} - Luxury Eyewear Boutique Eye-Q Optical Kolkata`} 
+                          width={64}
+                          height={64}
                           className="w-full h-full object-cover animate-fade-in"
                           referrerPolicy="no-referrer"
                         />
